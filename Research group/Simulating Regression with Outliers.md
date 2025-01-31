@@ -6,6 +6,10 @@ by:
 - generating n $\epsilon$'s $\sim NID(0, \sigma^2)$
 - randomly modifying set number of $\epsilon$ by adding deviation $\sim U(-\delta,+\delta)$ 
 - and finally generating $Y$'s by adding the required values together.
+After this, we fit Y ~ X and take note of the MSE.
+
+We wrapped this set of computations in a function and called it with our parameters to see the effect of the number of outliers and the strength of the deviation.
+
 Here's our plots:
 ![[Pasted image 20250201030823.png]]
 ![[Pasted image 20250201032239.png]]
