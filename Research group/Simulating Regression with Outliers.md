@@ -3,7 +3,7 @@ Our simulation generates $n$ values of the following model:
 $$Y = \alpha+\beta X+\epsilon$$
 by:
 - generating n $X$'s
-- generating n $\epsilon$'s
+- generating n $\epsilon$'s $\sim NID(0, \sigma^2)$
 - randomly modifying set number of $\epsilon$ by adding deviation $\sim U(-\delta,+\delta)$ 
 - and finally generating $Y$'s by adding the required values together.
 Here's our plots:
@@ -64,5 +64,5 @@ print(p)
 ## By:
 Khalid Muntasir Sawad - 2210424179
 Ashik E Elahi - 2210724113
-Jamilor Rahman Refat - 2210424116
 Akib Iqbal - 2210824151
+Jamilor Rahman Refat - 2210424116
